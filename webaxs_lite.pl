@@ -82,7 +82,6 @@ get '/rpc/user_config' => sub{
 
 any [qw(get post)] => '/rpc/ls(*path)' => {path => '/'} => sub{
     my $self = shift;
-warn "### DEBUG: " . $self;
     my $path = _decode_uri($self->stash('path'));
     $self->render(json => $self->ls($path));
 };
@@ -140,44 +139,10 @@ any [qw(get post)] => '/rpc/thumbnail(*path)' => {path => '/'} => sub{
     }
 };
 
-post '/rpc/upload(*path)' => {path => '/'} => sub{
-    shift->render(status => 403, text => 'Permission denied');
-};
-
-post '/rpc/upload_via_flash(*path)' => {path => '/'} => sub{
-    shift->render(status => 403, text => 'Permission denied');
-};
-
-post '/rpc/mkdir(*path)' => {path => '/'} => sub{
-    shift->render(status => 403, text => 'Permission denied');
-};
-
-post '/rpc/rm(*path)' => {path => '/'} => sub{
-    shift->render(status => 403, text => 'Permission denied');
-};
-
-post '/rpc/mv(*path)' => {path => '/'} => sub{
-    shift->render(status => 403, text => 'Permission denied');
-};
-
-post '/rpc/cp(*path)' => {path => '/'} => sub{
-    shift->render(status => 403, text => 'Permission denied');
-};
-
-post '/rpc/dir_config(*path)' => {path => '/'} => sub{
-    shift->render(status => 404, text => 'Command not supported');
-};
-
-any [qw(get post)] => '/rpc/purge(*path)' => {path => '/'} => sub{
-    shift->render(status => 404, text => 'Command not supported');
-};
-
-any [qw(get post)] => '/rpc/share(*path)' => {path => '/'} => sub{
-    shift->render(status => 404, text => 'Command not supported');
-};
-
-any [qw(get post)] => '/rpc/version' => sub{
-    shift->render(status => 404, text => 'Command not supported');
-};
+foreach my $cmd ( qw/upload upload_via_flash mkdir rm mv cp dir_config purge share/ ) {
+    post "/rpc/$cmd(*path)" => {path => '/'} => sub{
+        shift->render(status => 403, text => 'Permission denied');
+    };
+}
 
 app-start;
