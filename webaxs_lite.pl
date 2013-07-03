@@ -99,6 +99,10 @@ any [qw(get post)] => '/rpc/cat(*path)' => {path => '/'} => sub{
     $self->_send_file($path, format => $path->extension, content_disposition => 'inline');
 };
 
+any [qw(get post)] => '/rpc/download.zip(*path)' => {path => '/'} => sub{
+    shift->render(status => 404, text => 'Command not supported');
+};
+
 any [qw(get post)] => '/rpc/download(*path)' => {path => '/'} => sub{
     my $self = shift;
     my $path = $self->extra_path;
@@ -122,10 +126,6 @@ helper _send_file => sub{
     return '';
 };
 
-any [qw(get post)] => '/rpc/download.zip(*path)' => {path => '/'} => sub{
-    shift->render(status => 404, text => 'Command not supported');
-};
-
 any [qw(get post)] => '/rpc/thumbnail(*path)' => {path => '/'} => sub{
     my $self = shift;
     my $path = $self->extra_path;
@@ -139,7 +139,7 @@ any [qw(get post)] => '/rpc/thumbnail(*path)' => {path => '/'} => sub{
     }
 };
 
-foreach my $cmd ( qw/upload upload_via_flash mkdir rm mv cp dir_config purge share/ ) {
+foreach my $cmd ( qw/upload_via_flash upload mkdir rm mv cp dir_config purge share/ ) {
     post "/rpc/$cmd(*path)" => {path => '/'} => sub{
         shift->render(status => 403, text => 'Permission denied');
     };
