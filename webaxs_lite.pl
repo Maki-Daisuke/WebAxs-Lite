@@ -1,6 +1,5 @@
 #!/usr/bin/env perl
 
-use Carp;
 use Encode qw(decode_utf8);
 use File::stat;
 use Path::Tiny;
@@ -32,7 +31,7 @@ helper ls => sub{
     my $self = shift;
     my $path = $self->path(shift);
     if ( -d $path->realpath ) {
-        opendir my $dir, $path->realpath  or croak "Can't opendir " . $path->realpath;
+        opendir my $dir, $path->realpath  or Mojo::Exception->throw("Can't opendir " . $path->realpath);
         return [map{ $self->stat($path->cat($_)) } readdir $dir];
     } else {
         return [$self->stat($path)];
@@ -42,7 +41,7 @@ helper ls => sub{
 helper stat => sub{
     my $self = shift;
     my $path = $self->path(shift);
-    my $st = stat($path->realpath)  or croak "Can't stat " . $path->realpath;
+    my $st = stat($path->realpath)  or Mojo::Exception->throw("Can't stat " . $path->realpath);
     return {
         name      => $path->basename,
         path      => $path->clean,
