@@ -12,9 +12,12 @@ use Mojo::JSON;
 use constant true  => Mojo::JSON->true;
 use constant false => Mojo::JSON->false;
 
+BEGIN{
+    $ENV{WEBAXS_SHARE} ||= app->home->rel_dir('./share');
+    die "WEBAXS_SHARE must be a directory, but it's not: $ENV{WEBAXS_SHARE}"  unless -d $ENV{WEBAXS_SHARE};
+}
+use constant SHARED_DIR     => path($ENV{WEBAXS_SHARE})->absolute;
 use constant WEBAXS_VERSION => '3.0';
-BEGIN{ Mojo::Exception->throw("Not a directory: $ENV{WEBAXS_SHARE}") if $ENV{WEBAXS_SHARE} && not -d $ENV{WEBAXS_SHARE} }
-use constant SHARED_DIR     => path($ENV{WEBAXS_SHARE} || app->home->rel_dir('./share'))->absolute;
 
 
 plugin 'RenderFile';
