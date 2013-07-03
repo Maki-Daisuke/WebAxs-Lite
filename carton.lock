@@ -401,6 +401,217 @@
          "target" : "Encode",
          "version" : "2.51"
       },
+      "ExtUtils::Config" : {
+         "dist" : "ExtUtils-Config-0.007",
+         "mymeta" : {
+            "abstract" : "A wrapper for perl's configuration",
+            "author" : [
+               "Ken Williams <kwilliams@cpan.org>",
+               "Leon Timmermans <leont@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Dist::Zilla version 4.300021, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "ExtUtils-Config",
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "File::Find" : "0",
+                     "File::Temp" : "0",
+                     "Test::More" : "0.88"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "6.30"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Config" : "0",
+                     "Data::Dumper" : "0",
+                     "strict" : "0",
+                     "warnings" : "0"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "bugtracker" : {
+                  "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=ExtUtils-Config"
+               },
+               "repository" : {
+                  "type" : "git",
+                  "url" : "git://github.com/Leont/extutils-config.git"
+               }
+            },
+            "version" : "0.007"
+         },
+         "name" : "ExtUtils::Config",
+         "pathname" : "L/LE/LEONT/ExtUtils-Config-0.007.tar.gz",
+         "provides" : {
+            "ExtUtils::Config" : {
+               "file" : "ExtUtils/Config.pm",
+               "version" : "0.007"
+            }
+         },
+         "target" : "ExtUtils::Config",
+         "version" : "0.007"
+      },
+      "ExtUtils::Helpers" : {
+         "dist" : "ExtUtils-Helpers-0.021",
+         "mymeta" : {
+            "abstract" : "Various portability utilities for module builders",
+            "author" : [
+               "Ken Williams <kwilliams@cpan.org>",
+               "Leon Timmermans <leont@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Dist::Zilla version 4.300033, CPAN::Meta::Converter version 2.130880, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "ExtUtils-Helpers",
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "Cwd" : "0",
+                     "File::Find" : "0",
+                     "File::Temp" : "0",
+                     "Test::More" : "0"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "6.30"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Carp" : "0",
+                     "Config" : "0",
+                     "Exporter" : "5.57",
+                     "File::Basename" : "0",
+                     "File::Copy" : "0",
+                     "File::Spec::Functions" : "0",
+                     "Module::Load" : "0",
+                     "Text::ParseWords" : "3.24",
+                     "strict" : "0",
+                     "warnings" : "0"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "bugtracker" : {
+                  "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=ExtUtils-Helpers"
+               },
+               "repository" : {
+                  "type" : "git",
+                  "url" : "git://github.com/Leont/extutils-helpers.git"
+               }
+            },
+            "version" : "0.021"
+         },
+         "name" : "ExtUtils::Helpers",
+         "pathname" : "L/LE/LEONT/ExtUtils-Helpers-0.021.tar.gz",
+         "provides" : {
+            "ExtUtils::Helpers" : {
+               "file" : "ExtUtils/Helpers.pm",
+               "version" : "0.021"
+            },
+            "ExtUtils::Helpers::Unix" : {
+               "file" : "ExtUtils/Helpers/Unix.pm",
+               "version" : "0.021"
+            },
+            "ExtUtils::Helpers::VMS" : {
+               "file" : "ExtUtils/Helpers/VMS.pm",
+               "version" : "0.021"
+            },
+            "ExtUtils::Helpers::Windows" : {
+               "file" : "ExtUtils/Helpers/Windows.pm",
+               "version" : "0.021"
+            }
+         },
+         "target" : "ExtUtils::Helpers",
+         "version" : "0.021"
+      },
+      "ExtUtils::InstallPaths" : {
+         "dist" : "ExtUtils-InstallPaths-0.009",
+         "mymeta" : {
+            "abstract" : "Build.PL install path logic made easy",
+            "author" : [
+               "Ken Williams <kwilliams@cpan.org>",
+               "Leon Timmermans <leont@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Dist::Zilla version 4.300021, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "ExtUtils-InstallPaths",
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "Config" : "0",
+                     "File::Find" : "0",
+                     "File::Spec::Functions" : "0",
+                     "File::Temp" : "0",
+                     "Test::More" : "0"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "6.30"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Carp" : "0",
+                     "ExtUtils::Config" : "0.002",
+                     "File::Spec" : "0",
+                     "strict" : "0",
+                     "warnings" : "0"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "bugtracker" : {
+                  "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=ExtUtils-InstallPaths"
+               },
+               "repository" : {
+                  "type" : "git",
+                  "url" : "git://github.com/Leont/extutils-installpaths.git"
+               }
+            },
+            "version" : "0.009"
+         },
+         "name" : "ExtUtils::InstallPaths",
+         "pathname" : "L/LE/LEONT/ExtUtils-InstallPaths-0.009.tar.gz",
+         "provides" : {
+            "ExtUtils::InstallPaths" : {
+               "file" : "ExtUtils/InstallPaths.pm",
+               "version" : "0.009"
+            }
+         },
+         "target" : "ExtUtils::InstallPaths",
+         "version" : "0.009"
+      },
       "File::pushd" : {
          "dist" : "File-pushd-1.005",
          "mymeta" : {
@@ -558,6 +769,123 @@
          },
          "target" : "Scalar::Util",
          "version" : "1.27"
+      },
+      "Module::Build::Tiny" : {
+         "dist" : "Module-Build-Tiny-0.024",
+         "mymeta" : {
+            "abstract" : "A tiny replacement for Module::Build",
+            "author" : [
+               "Leon Timmermans <leont@cpan.org>",
+               "David Golden <dagolden@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Module-Build-Tiny",
+            "prereqs" : {
+               "configure" : {
+                  "requires" : {
+                     "CPAN::Meta" : "0",
+                     "Exporter" : "5.57",
+                     "ExtUtils::CBuilder" : "0",
+                     "ExtUtils::Config" : "0.003",
+                     "ExtUtils::Helpers" : "0.020",
+                     "ExtUtils::Install" : "0",
+                     "ExtUtils::InstallPaths" : "0.002",
+                     "ExtUtils::ParseXS" : "0",
+                     "File::Basename" : "0",
+                     "File::Find" : "0",
+                     "File::Path" : "0",
+                     "File::Spec::Functions" : "0",
+                     "Getopt::Long" : "0",
+                     "JSON::PP" : "2",
+                     "Pod::Man" : "0",
+                     "TAP::Harness" : "0",
+                     "perl" : "5.006",
+                     "strict" : "0",
+                     "warnings" : "0"
+                  }
+               },
+               "develop" : {
+                  "requires" : {
+                     "Test::Pod" : "1.41"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "CPAN::Meta" : "0",
+                     "Exporter" : "5.57",
+                     "ExtUtils::CBuilder" : "0",
+                     "ExtUtils::Config" : "0.003",
+                     "ExtUtils::Helpers" : "0.020",
+                     "ExtUtils::Install" : "0",
+                     "ExtUtils::InstallPaths" : "0.002",
+                     "ExtUtils::ParseXS" : "0",
+                     "File::Basename" : "0",
+                     "File::Find" : "0",
+                     "File::Path" : "0",
+                     "File::Spec::Functions" : "0",
+                     "Getopt::Long" : "0",
+                     "JSON::PP" : "2",
+                     "Pod::Man" : "0",
+                     "TAP::Harness" : "0",
+                     "perl" : "5.006",
+                     "strict" : "0",
+                     "warnings" : "0"
+                  },
+                  "suggests" : {
+                     "constant" : "1.27"
+                  }
+               },
+               "test" : {
+                  "requires" : {
+                     "Carp" : "0",
+                     "Config" : "0",
+                     "Cwd" : "0",
+                     "Data::Dumper" : "0",
+                     "File::Spec" : "0",
+                     "File::Temp" : "0",
+                     "IO::File" : "0",
+                     "IPC::Open2" : "0",
+                     "Test::More" : "0.88",
+                     "XSLoader" : "0",
+                     "blib" : "0"
+                  },
+                  "suggests" : {
+                     "File::ShareDir" : "1.000"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "bugtracker" : {
+                  "mailto" : "bug-module-build-tiny at rt.cpan.org",
+                  "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Module-Build-Tiny"
+               },
+               "repository" : {
+                  "type" : "git",
+                  "url" : "git://github.com/Leont/module-build-tiny.git",
+                  "web" : "https://github.com/Leont/module-build-tiny"
+               }
+            },
+            "version" : "0.024"
+         },
+         "name" : "Module::Build::Tiny",
+         "pathname" : "L/LE/LEONT/Module-Build-Tiny-0.024.tar.gz",
+         "provides" : {
+            "Module::Build::Tiny" : {
+               "file" : "Module/Build/Tiny.pm",
+               "version" : "0.024"
+            }
+         },
+         "target" : "Module::Build::Tiny",
+         "version" : "0.024"
       },
       "Mojolicious" : {
          "dist" : "Mojolicious-4.16",
@@ -921,6 +1249,86 @@
          },
          "target" : "Mojolicious",
          "version" : "4.16"
+      },
+      "Mojolicious::Plugin::Directory" : {
+         "dist" : "Mojolicious-Plugin-Directory-0.08",
+         "mymeta" : {
+            "abstract" : "Serve static files from document root with directory index",
+            "author" : [
+               "hayajo <hayajo@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Dist::Milla version v1.0.2, Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.131560, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Mojolicious-Plugin-Directory",
+            "no_index" : {
+               "directory" : [
+                  "t",
+                  "xt",
+                  "inc",
+                  "share",
+                  "eg",
+                  "examples"
+               ]
+            },
+            "prereqs" : {
+               "configure" : {
+                  "requires" : {
+                     "Module::Build::Tiny" : "0.023"
+                  }
+               },
+               "develop" : {
+                  "requires" : {
+                     "Test::Pod" : "1.41"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Mojolicious" : "3.02",
+                     "perl" : "5.010001"
+                  }
+               },
+               "test" : {
+                  "requires" : {
+                     "Test::More" : "0.88"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "bugtracker" : {
+                  "web" : "https://github.com/hayajo/Mojolicious-Plugin-Directory/issues"
+               },
+               "homepage" : "https://github.com/hayajo/Mojolicious-Plugin-Directory",
+               "repository" : {
+                  "type" : "git",
+                  "url" : "https://github.com/hayajo/Mojolicious-Plugin-Directory.git",
+                  "web" : "https://github.com/hayajo/Mojolicious-Plugin-Directory"
+               }
+            },
+            "version" : "0.08",
+            "x_contributors" : [
+               "ChinaXing(陈云星) <chen.yack@gmail.com>",
+               "hayajo <hayato.imai@gmail.com>",
+               "hayato imai <hayato.imai@gmail.com>"
+            ]
+         },
+         "name" : "Mojolicious::Plugin::Directory",
+         "pathname" : "H/HA/HAYAJO/Mojolicious-Plugin-Directory-0.08.tar.gz",
+         "provides" : {
+            "Mojolicious::Plugin::Directory" : {
+               "file" : "Mojolicious/Plugin/Directory.pm",
+               "version" : "0.08"
+            }
+         },
+         "target" : "Mojolicious::Plugin::Directory",
+         "version" : "0.08"
       },
       "Mojolicious::Plugin::RenderFile" : {
          "dist" : "Mojolicious-Plugin-RenderFile-0.06",

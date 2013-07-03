@@ -24,6 +24,7 @@ sub _decode_uri ($) {
 use Mojolicious::Lite;
 
 plugin 'RenderFile';
+plugin 'Directory' => {root => app->home->rel_dir('public'), dir_index => [qw/index.html index.htm/]};
 
 app->types->type(\%WebAxs::MimeTypes);
 
