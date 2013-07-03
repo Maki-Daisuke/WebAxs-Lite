@@ -131,11 +131,11 @@ any [qw(get post)] => '/rpc/thumbnail(*path)' => {path => '/'} => sub{
     my $path = _decode_uri($self->stash('path'));
     $path = $self->path($path);
     return $self->render(status => 404, text => 'Unsupported file type')  unless $path =~ /\.(?:jpg|jpeg|gif|png)$/i;
-    my $size = uc $self->param('size');
+    my $size = uc($self->param('size') || 'M');
+    $size = 'M'  unless $size =~ /^(?:S|M|L|LL|3L|4L)$/;
     if ( $size =~ /^(?:3L|4L)$/ ) {
         $self->_send_file($path, format => $path->extension, content_disposition => 'inline');
     } else {
-        $size = 'M'  unless $size =~ /^(?:S|L|LL)$/;
         $self->render_static("thumbs/$size.png");
     }
 };
