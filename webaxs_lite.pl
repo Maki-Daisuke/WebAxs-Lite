@@ -1,5 +1,7 @@
 #!/usr/bin/env perl
 
+use Mojolicious::Lite;
+
 use Encode qw(decode_utf8);
 use File::stat;
 use Path::Tiny;
@@ -12,15 +14,14 @@ use constant true  => Mojo::JSON->true;
 use constant false => Mojo::JSON->false;
 
 use constant WEBAXS_VERSION => '3.0';
-use constant SHARED_DIR     => path(shift)->absolute;
+BEGIN{ Mojo::Exception->throw("Not a directory: $ENV{WEBAXS_SHARE}") if $ENV{WEBAXS_SHARE} && not -d $ENV{WEBAXS_SHARE} }
+use constant SHARED_DIR     => path($ENV{WEBAXS_SHARE} || app->home->rel_dir('./share'))->absolute;
 
 
 sub _decode_uri ($) {
     decode_utf8(uri_unescape($_[0]));
 }
 
-
-use Mojolicious::Lite;
 
 plugin 'RenderFile';
 plugin 'Directory' => {root => app->home->rel_dir('public'), dir_index => [qw/index.html index.htm/]};
