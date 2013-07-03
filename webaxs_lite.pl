@@ -82,6 +82,7 @@ get '/rpc/user_config' => sub{
 
 any [qw(get post)] => '/rpc/ls(*path)' => {path => '/'} => sub{
     my $self = shift;
+warn "### DEBUG: " . $self;
     my $path = _decode_uri($self->stash('path'));
     $self->render(json => $self->ls($path));
 };
@@ -125,6 +126,20 @@ any [qw(get post)] => '/rpc/download.zip(*path)' => {path => '/'} => sub{
     shift->render(status => 404, text => 'Command not supported');
 };
 
+any [qw(get post)] => '/rpc/thumbnail(*path)' => {path => '/'} => sub{
+    my $self = shift;
+    my $path = _decode_uri($self->stash('path'));
+    $path = $self->path($path);
+    return $self->render(status => 404, text => 'Unsupported file type')  unless $path =~ /\.(?:jpg|jpeg|gif|png)$/i;
+    my $size = uc $self->param('size');
+    if ( $size =~ /^(?:3L|4L)$/ ) {
+        $self->_send_file($path, format => $path->extension, content_disposition => 'inline');
+    } else {
+        $size = 'M'  unless $size =~ /^(?:S|L|LL)$/;
+        $self->render_static("thumbs/$size.png");
+    }
+};
+
 post '/rpc/upload(*path)' => {path => '/'} => sub{
     shift->render(status => 403, text => 'Permission denied');
 };
@@ -147,10 +162,6 @@ post '/rpc/mv(*path)' => {path => '/'} => sub{
 
 post '/rpc/cp(*path)' => {path => '/'} => sub{
     shift->render(status => 403, text => 'Permission denied');
-};
-
-post '/rpc/thumbnail(*path)' => {path => '/'} => sub{
-    shift->render(status => 404, text => 'Command not supported');
 };
 
 post '/rpc/dir_config(*path)' => {path => '/'} => sub{
