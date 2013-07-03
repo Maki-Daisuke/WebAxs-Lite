@@ -1,249 +1,5 @@
 {
    "modules" : {
-      "Capture::Tiny" : {
-         "dist" : "Capture-Tiny-0.22",
-         "mymeta" : {
-            "abstract" : "Capture STDOUT and STDERR from Perl, XS or external programs",
-            "author" : [
-               "David Golden <dagolden@cpan.org>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.300031, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "apache_2_0"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Capture-Tiny",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "xt",
-                  "examples",
-                  "corpus"
-               ],
-               "package" : [
-                  "DB"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "Config" : "0",
-                     "ExtUtils::MakeMaker" : "0",
-                     "File::Find" : "0",
-                     "File::Spec::Functions" : "0",
-                     "IO::File" : "0",
-                     "List::Util" : "0",
-                     "Test::More" : "0.62"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "6.30"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Carp" : "0",
-                     "Exporter" : "0",
-                     "File::Spec" : "0",
-                     "File::Temp" : "0",
-                     "IO::Handle" : "0",
-                     "Scalar::Util" : "0",
-                     "strict" : "0",
-                     "warnings" : "0"
-                  }
-               }
-            },
-            "provides" : {
-               "Capture::Tiny" : {
-                  "file" : "lib/Capture/Tiny.pm",
-                  "version" : "0.22"
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "bugtracker" : {
-                  "web" : "https://github.com/dagolden/capture-tiny/issues"
-               },
-               "homepage" : "https://metacpan.org/release/Capture-Tiny",
-               "repository" : {
-                  "type" : "git",
-                  "url" : "git://github.com/dagolden/capture-tiny.git"
-               }
-            },
-            "version" : "0.22"
-         },
-         "name" : "Capture::Tiny",
-         "pathname" : "D/DA/DAGOLDEN/Capture-Tiny-0.22.tar.gz",
-         "provides" : {
-            "Capture::Tiny" : {
-               "file" : "Capture/Tiny.pm",
-               "version" : "0.22"
-            }
-         },
-         "target" : "Capture::Tiny",
-         "version" : "0.22"
-      },
-      "Cwd" : {
-         "dist" : "PathTools-3.40",
-         "mymeta" : {
-            "abstract" : "unknown",
-            "author" : [
-               "unknown"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "unknown"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "PathTools",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "inc"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Carp" : "0",
-                     "File::Basename" : "0",
-                     "Scalar::Util" : "0",
-                     "Test" : "0"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "version" : "3.40"
-         },
-         "name" : "Cwd",
-         "pathname" : "S/SM/SMUELLER/PathTools-3.40.tar.gz",
-         "provides" : {
-            "Cwd" : {
-               "file" : "Cwd.pm",
-               "version" : "3.40"
-            },
-            "File::Spec" : {
-               "file" : "File/Spec.pm",
-               "version" : "3.40"
-            },
-            "File::Spec::Cygwin" : {
-               "file" : "File/Spec/Cygwin.pm",
-               "version" : "3.40"
-            },
-            "File::Spec::Epoc" : {
-               "file" : "File/Spec/Epoc.pm",
-               "version" : "3.40"
-            },
-            "File::Spec::Functions" : {
-               "file" : "File/Spec/Functions.pm",
-               "version" : "3.40"
-            },
-            "File::Spec::Mac" : {
-               "file" : "File/Spec/Mac.pm",
-               "version" : "3.40"
-            },
-            "File::Spec::OS2" : {
-               "file" : "File/Spec/OS2.pm",
-               "version" : "3.40"
-            },
-            "File::Spec::Unix" : {
-               "file" : "File/Spec/Unix.pm",
-               "version" : "3.40"
-            },
-            "File::Spec::VMS" : {
-               "file" : "File/Spec/VMS.pm",
-               "version" : "3.40"
-            },
-            "File::Spec::Win32" : {
-               "file" : "File/Spec/Win32.pm",
-               "version" : "3.40"
-            }
-         },
-         "target" : "File::Spec",
-         "version" : "3.40"
-      },
-      "Devel::Hide" : {
-         "dist" : "Devel-Hide-0.0009",
-         "mymeta" : {
-            "abstract" : "Forces the unavailability of specified Perl modules (for testing)",
-            "author" : [
-               "A. R. Ferreira <ferreira@cpan.org>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.113640, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "perl_5"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Devel-Hide",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "inc"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "runtime" : {
-                  "recommends" : {
-                     "Test::Pod" : "1.18",
-                     "Test::Pod::Coverage" : "1.04"
-                  },
-                  "requires" : {
-                     "Test::More" : "0"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "repository" : {
-                  "url" : "https://github.com/aferreira/cpan-Devel-Hide"
-               }
-            },
-            "version" : "0.0009"
-         },
-         "name" : "Devel::Hide",
-         "pathname" : "F/FE/FERREIRA/Devel-Hide-0.0009.tar.gz",
-         "provides" : {
-            "Devel::Hide" : {
-               "file" : "Devel/Hide.pm",
-               "version" : "0.0009"
-            }
-         },
-         "target" : "Devel::Hide",
-         "version" : "0.0009"
-      },
       "Encode" : {
          "dist" : "Encode-2.51",
          "mymeta" : {
@@ -439,16 +195,25 @@
                      "strict" : "0",
                      "warnings" : "0"
                   }
+               },
+               "test" : {
+                  "requires" : {
+                     "File::Find" : "0",
+                     "File::Temp" : "0",
+                     "Test::More" : "0.88"
+                  }
                }
             },
             "release_status" : "stable",
             "resources" : {
                "bugtracker" : {
+                  "mailto" : "bug-extutils-config at rt.cpan.org",
                   "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=ExtUtils-Config"
                },
                "repository" : {
                   "type" : "git",
-                  "url" : "git://github.com/Leont/extutils-config.git"
+                  "url" : "git://github.com/Leont/extutils-config.git",
+                  "web" : "http://github.com/Leont/extutils-config"
                }
             },
             "version" : "0.007"
@@ -484,16 +249,18 @@
             "name" : "ExtUtils-Helpers",
             "prereqs" : {
                "build" : {
-                  "requires" : {
-                     "Cwd" : "0",
-                     "File::Find" : "0",
-                     "File::Temp" : "0",
-                     "Test::More" : "0"
-                  }
+                  "requires" : {}
                },
                "configure" : {
                   "requires" : {
                      "ExtUtils::MakeMaker" : "6.30"
+                  }
+               },
+               "develop" : {
+                  "requires" : {
+                     "Pod::Coverage::TrustPod" : "0",
+                     "Test::Pod" : "1.41",
+                     "Test::Pod::Coverage" : "1.08"
                   }
                },
                "runtime" : {
@@ -509,16 +276,26 @@
                      "strict" : "0",
                      "warnings" : "0"
                   }
+               },
+               "test" : {
+                  "requires" : {
+                     "Cwd" : "0",
+                     "File::Find" : "0",
+                     "File::Temp" : "0",
+                     "Test::More" : "0"
+                  }
                }
             },
             "release_status" : "stable",
             "resources" : {
                "bugtracker" : {
+                  "mailto" : "bug-extutils-helpers at rt.cpan.org",
                   "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=ExtUtils-Helpers"
                },
                "repository" : {
                   "type" : "git",
-                  "url" : "git://github.com/Leont/extutils-helpers.git"
+                  "url" : "git://github.com/Leont/extutils-helpers.git",
+                  "web" : "http://github.com/Leont/extutils-helpers"
                }
             },
             "version" : "0.021"
@@ -587,16 +364,27 @@
                      "strict" : "0",
                      "warnings" : "0"
                   }
+               },
+               "test" : {
+                  "requires" : {
+                     "Config" : "0",
+                     "File::Find" : "0",
+                     "File::Spec::Functions" : "0",
+                     "File::Temp" : "0",
+                     "Test::More" : "0"
+                  }
                }
             },
             "release_status" : "stable",
             "resources" : {
                "bugtracker" : {
+                  "mailto" : "bug-extutils-installpaths at rt.cpan.org",
                   "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=ExtUtils-InstallPaths"
                },
                "repository" : {
                   "type" : "git",
-                  "url" : "git://github.com/Leont/extutils-installpaths.git"
+                  "url" : "git://github.com/Leont/extutils-installpaths.git",
+                  "web" : "http://github.com/Leont/extutils-installpaths"
                }
             },
             "version" : "0.009"
@@ -611,164 +399,6 @@
          },
          "target" : "ExtUtils::InstallPaths",
          "version" : "0.009"
-      },
-      "File::pushd" : {
-         "dist" : "File-pushd-1.005",
-         "mymeta" : {
-            "abstract" : "change directory temporarily for a limited scope",
-            "author" : [
-               "David Golden <dagolden@cpan.org>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.300031, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "apache_2_0"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "File-pushd",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "xt",
-                  "examples",
-                  "corpus"
-               ],
-               "package" : [
-                  "DB"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0",
-                     "File::Basename" : "0",
-                     "File::Find" : "0",
-                     "File::Spec::Functions" : "0",
-                     "List::Util" : "0",
-                     "Test::More" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "6.30"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Carp" : "0",
-                     "Cwd" : "0",
-                     "Exporter" : "0",
-                     "File::Path" : "0",
-                     "File::Spec" : "0",
-                     "File::Temp" : "0",
-                     "overload" : "0",
-                     "strict" : "0",
-                     "warnings" : "0"
-                  }
-               }
-            },
-            "provides" : {
-               "File::pushd" : {
-                  "file" : "lib/File/pushd.pm",
-                  "version" : "1.005"
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "bugtracker" : {
-                  "web" : "https://github.com/dagolden/file-pushd/issues"
-               },
-               "homepage" : "https://metacpan.org/release/File-pushd",
-               "repository" : {
-                  "type" : "git",
-                  "url" : "git://github.com/dagolden/file-pushd.git"
-               }
-            },
-            "version" : "1.005",
-            "x_contributors" : [
-               "Diab Jerius <djerius@cfa.harvard.edu>"
-            ]
-         },
-         "name" : "File::pushd",
-         "pathname" : "D/DA/DAGOLDEN/File-pushd-1.005.tar.gz",
-         "provides" : {
-            "File::pushd" : {
-               "file" : "File/pushd.pm",
-               "version" : "1.005"
-            }
-         },
-         "target" : "File::pushd",
-         "version" : "1.005"
-      },
-      "List::Util" : {
-         "dist" : "Scalar-List-Utils-1.27",
-         "mymeta" : {
-            "abstract" : "Common Scalar and List utility subroutines",
-            "author" : [
-               "Graham Barr <gbarr@cpan.org>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.57_05, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "perl_5"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Scalar-List-Utils",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "inc"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Test::More" : "0"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "repository" : {
-                  "url" : "https://github.com/Scalar-List-Utils/Scalar-List-Utils"
-               }
-            },
-            "version" : "1.27"
-         },
-         "name" : "List::Util",
-         "pathname" : "P/PE/PEVANS/Scalar-List-Utils-1.27.tar.gz",
-         "provides" : {
-            "List::Util" : {
-               "file" : "List/Util.pm",
-               "version" : "1.27"
-            },
-            "List::Util::XS" : {
-               "file" : "List/Util/XS.pm",
-               "version" : "1.27"
-            },
-            "Scalar::Util" : {
-               "file" : "Scalar/Util.pm",
-               "version" : "1.27"
-            }
-         },
-         "target" : "Scalar::Util",
-         "version" : "1.27"
       },
       "Module::Build::Tiny" : {
          "dist" : "Module-Build-Tiny-0.024",
@@ -1415,25 +1045,19 @@
             },
             "prereqs" : {
                "build" : {
-                  "requires" : {
-                     "Config" : "0",
-                     "Devel::Hide" : "0",
-                     "ExtUtils::MakeMaker" : "0",
-                     "File::Find" : "0",
-                     "File::Spec::Functions" : "0",
-                     "File::Spec::Unix" : "0",
-                     "File::pushd" : "0",
-                     "List::Util" : "0",
-                     "Test::Deep" : "0",
-                     "Test::FailWarnings" : "0",
-                     "Test::Fatal" : "0",
-                     "Test::More" : "0.96",
-                     "open" : "0"
-                  }
+                  "requires" : {}
                },
                "configure" : {
                   "requires" : {
                      "ExtUtils::MakeMaker" : "6.30"
+                  }
+               },
+               "develop" : {
+                  "requires" : {
+                     "Pod::Coverage::TrustPod" : "0",
+                     "Test::CPAN::Meta" : "0",
+                     "Test::Pod" : "1.41",
+                     "Test::Pod::Coverage" : "1.08"
                   }
                },
                "runtime" : {
@@ -1457,6 +1081,23 @@
                      "threads" : "0",
                      "warnings" : "0"
                   }
+               },
+               "test" : {
+                  "requires" : {
+                     "Config" : "0",
+                     "Devel::Hide" : "0",
+                     "ExtUtils::MakeMaker" : "0",
+                     "File::Find" : "0",
+                     "File::Spec::Functions" : "0",
+                     "File::Spec::Unix" : "0",
+                     "File::pushd" : "0",
+                     "List::Util" : "0",
+                     "Test::Deep" : "0",
+                     "Test::FailWarnings" : "0",
+                     "Test::Fatal" : "0",
+                     "Test::More" : "0.96",
+                     "open" : "0"
+                  }
                }
             },
             "provides" : {
@@ -1473,7 +1114,8 @@
                "homepage" : "https://metacpan.org/release/Path-Tiny",
                "repository" : {
                   "type" : "git",
-                  "url" : "git://github.com/dagolden/path-tiny.git"
+                  "url" : "git://github.com/dagolden/path-tiny.git",
+                  "web" : "https://github.com/dagolden/path-tiny"
                }
             },
             "version" : "0.024",
@@ -1498,760 +1140,6 @@
          "target" : "Path::Tiny",
          "version" : "0.024"
       },
-      "Test::Deep" : {
-         "dist" : "Test-Deep-0.110",
-         "mymeta" : {
-            "abstract" : "unknown",
-            "author" : [
-               "Fergal Daly <fergal@esatclear.ie>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "unknown"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Test-Deep",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "inc"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "List::Util" : "1.09",
-                     "Scalar::Util" : "1.09",
-                     "Test::More" : "0",
-                     "Test::NoWarnings" : "0.02",
-                     "Test::Tester" : "0.04"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "version" : "0.110"
-         },
-         "name" : "Test::Deep",
-         "pathname" : "R/RJ/RJBS/Test-Deep-0.110.tar.gz",
-         "provides" : {
-            "Test::Deep" : {
-               "file" : "Test/Deep.pm",
-               "version" : "0.110"
-            },
-            "Test::Deep::All" : {
-               "file" : "Test/Deep/All.pm"
-            },
-            "Test::Deep::Any" : {
-               "file" : "Test/Deep/Any.pm"
-            },
-            "Test::Deep::Array" : {
-               "file" : "Test/Deep/Array.pm"
-            },
-            "Test::Deep::ArrayEach" : {
-               "file" : "Test/Deep/ArrayEach.pm"
-            },
-            "Test::Deep::ArrayElementsOnly" : {
-               "file" : "Test/Deep/ArrayElementsOnly.pm"
-            },
-            "Test::Deep::ArrayLength" : {
-               "file" : "Test/Deep/ArrayLength.pm"
-            },
-            "Test::Deep::ArrayLengthOnly" : {
-               "file" : "Test/Deep/ArrayLengthOnly.pm"
-            },
-            "Test::Deep::Blessed" : {
-               "file" : "Test/Deep/Blessed.pm"
-            },
-            "Test::Deep::Boolean" : {
-               "file" : "Test/Deep/Boolean.pm"
-            },
-            "Test::Deep::Cache" : {
-               "file" : "Test/Deep/Cache.pm"
-            },
-            "Test::Deep::Cache::Simple" : {
-               "file" : "Test/Deep/Cache/Simple.pm"
-            },
-            "Test::Deep::Class" : {
-               "file" : "Test/Deep/Class.pm"
-            },
-            "Test::Deep::Cmp" : {
-               "file" : "Test/Deep/Cmp.pm"
-            },
-            "Test::Deep::Code" : {
-               "file" : "Test/Deep/Code.pm"
-            },
-            "Test::Deep::Hash" : {
-               "file" : "Test/Deep/Hash.pm"
-            },
-            "Test::Deep::HashEach" : {
-               "file" : "Test/Deep/HashEach.pm"
-            },
-            "Test::Deep::HashElements" : {
-               "file" : "Test/Deep/HashElements.pm"
-            },
-            "Test::Deep::HashKeys" : {
-               "file" : "Test/Deep/HashKeys.pm"
-            },
-            "Test::Deep::HashKeysOnly" : {
-               "file" : "Test/Deep/HashKeysOnly.pm"
-            },
-            "Test::Deep::Ignore" : {
-               "file" : "Test/Deep/Ignore.pm"
-            },
-            "Test::Deep::Isa" : {
-               "file" : "Test/Deep/Isa.pm"
-            },
-            "Test::Deep::ListMethods" : {
-               "file" : "Test/Deep/ListMethods.pm"
-            },
-            "Test::Deep::MM" : {
-               "file" : "Test/Deep/MM.pm"
-            },
-            "Test::Deep::Methods" : {
-               "file" : "Test/Deep/Methods.pm"
-            },
-            "Test::Deep::NoTest" : {
-               "file" : "Test/Deep/NoTest.pm"
-            },
-            "Test::Deep::Number" : {
-               "file" : "Test/Deep/Number.pm"
-            },
-            "Test::Deep::Ref" : {
-               "file" : "Test/Deep/Ref.pm"
-            },
-            "Test::Deep::RefType" : {
-               "file" : "Test/Deep/RefType.pm"
-            },
-            "Test::Deep::Regexp" : {
-               "file" : "Test/Deep/Regexp.pm"
-            },
-            "Test::Deep::RegexpMatches" : {
-               "file" : "Test/Deep/RegexpMatches.pm"
-            },
-            "Test::Deep::RegexpRef" : {
-               "file" : "Test/Deep/RegexpRef.pm"
-            },
-            "Test::Deep::RegexpRefOnly" : {
-               "file" : "Test/Deep/RegexpRefOnly.pm"
-            },
-            "Test::Deep::RegexpVersion" : {
-               "file" : "Test/Deep/RegexpVersion.pm"
-            },
-            "Test::Deep::ScalarRef" : {
-               "file" : "Test/Deep/ScalarRef.pm"
-            },
-            "Test::Deep::ScalarRefOnly" : {
-               "file" : "Test/Deep/ScalarRefOnly.pm"
-            },
-            "Test::Deep::Set" : {
-               "file" : "Test/Deep/Set.pm"
-            },
-            "Test::Deep::Shallow" : {
-               "file" : "Test/Deep/Shallow.pm"
-            },
-            "Test::Deep::Stack" : {
-               "file" : "Test/Deep/Stack.pm"
-            },
-            "Test::Deep::String" : {
-               "file" : "Test/Deep/String.pm"
-            },
-            "Test::Deep::SubHash" : {
-               "file" : "Test/Deep/Hash.pm"
-            },
-            "Test::Deep::SubHashElements" : {
-               "file" : "Test/Deep/HashElements.pm"
-            },
-            "Test::Deep::SubHashKeys" : {
-               "file" : "Test/Deep/HashKeys.pm"
-            },
-            "Test::Deep::SubHashKeysOnly" : {
-               "file" : "Test/Deep/HashKeysOnly.pm"
-            },
-            "Test::Deep::SuperHash" : {
-               "file" : "Test/Deep/Hash.pm"
-            },
-            "Test::Deep::SuperHashElements" : {
-               "file" : "Test/Deep/HashElements.pm"
-            },
-            "Test::Deep::SuperHashKeys" : {
-               "file" : "Test/Deep/HashKeys.pm"
-            },
-            "Test::Deep::SuperHashKeysOnly" : {
-               "file" : "Test/Deep/HashKeysOnly.pm"
-            }
-         },
-         "target" : "Test::Deep",
-         "version" : "0.110"
-      },
-      "Test::FailWarnings" : {
-         "dist" : "Test-FailWarnings-0.005",
-         "mymeta" : {
-            "abstract" : "Add test failures if warnings are caught",
-            "author" : [
-               "David Golden <dagolden@cpan.org>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.130880, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "apache_2_0"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Test-FailWarnings",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "xt",
-                  "examples",
-                  "corpus"
-               ],
-               "package" : [
-                  "DB"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "Capture::Tiny" : "0.12",
-                     "ExtUtils::MakeMaker" : "0",
-                     "File::Find" : "0",
-                     "File::Spec::Functions" : "0",
-                     "File::Temp" : "0",
-                     "List::Util" : "0",
-                     "Test::More" : "0.96",
-                     "constant" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "6.30"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Carp" : "0",
-                     "Test::More" : "0.86",
-                     "strict" : "0",
-                     "warnings" : "0"
-                  }
-               }
-            },
-            "provides" : {
-               "Test::FailWarnings" : {
-                  "file" : "lib/Test/FailWarnings.pm",
-                  "version" : "0.005"
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "bugtracker" : {
-                  "web" : "https://github.com/dagolden/test-failwarnings/issues"
-               },
-               "homepage" : "https://metacpan.org/release/Test-FailWarnings",
-               "repository" : {
-                  "type" : "git",
-                  "url" : "git://github.com/dagolden/test-failwarnings.git"
-               }
-            },
-            "version" : "0.005"
-         },
-         "name" : "Test::FailWarnings",
-         "pathname" : "D/DA/DAGOLDEN/Test-FailWarnings-0.005.tar.gz",
-         "provides" : {
-            "Test::FailWarnings" : {
-               "file" : "Test/FailWarnings.pm",
-               "version" : "0.005"
-            }
-         },
-         "target" : "Test::FailWarnings",
-         "version" : "0.005"
-      },
-      "Test::Fatal" : {
-         "dist" : "Test-Fatal-0.010",
-         "mymeta" : {
-            "abstract" : "incredibly simple helpers for testing code with exceptions",
-            "author" : [
-               "Ricardo Signes <rjbs@cpan.org>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "Dist::Zilla version 4.300007, CPAN::Meta::Converter version 2.120351, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "perl_5"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Test-Fatal",
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "Test::Builder::Tester" : "0",
-                     "Test::More" : "0.47",
-                     "overload" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "6.30"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Carp" : "0",
-                     "Exporter" : "5.57",
-                     "Test::Builder" : "0",
-                     "Try::Tiny" : "0.07",
-                     "strict" : "0",
-                     "warnings" : "0"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "homepage" : "https://github.com/rjbs/test-fatal",
-               "repository" : {
-                  "url" : "https://github.com/rjbs/test-fatal.git"
-               }
-            },
-            "version" : "0.010",
-            "x_Dist_Zilla" : {
-               "plugins" : [
-                  {
-                     "class" : "Dist::Zilla::Plugin::CheckPrereqsIndexed",
-                     "name" : "@RJBS/CheckPrereqsIndexed",
-                     "version" : "0.007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::GatherDir",
-                     "name" : "@RJBS/@Basic/GatherDir",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::PruneCruft",
-                     "name" : "@RJBS/@Basic/PruneCruft",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::ManifestSkip",
-                     "name" : "@RJBS/@Basic/ManifestSkip",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::MetaYAML",
-                     "name" : "@RJBS/@Basic/MetaYAML",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::License",
-                     "name" : "@RJBS/@Basic/License",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Readme",
-                     "name" : "@RJBS/@Basic/Readme",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::ExtraTests",
-                     "name" : "@RJBS/@Basic/ExtraTests",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::ExecDir",
-                     "name" : "@RJBS/@Basic/ExecDir",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::ShareDir",
-                     "name" : "@RJBS/@Basic/ShareDir",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::MakeMaker",
-                     "name" : "@RJBS/@Basic/MakeMaker",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Manifest",
-                     "name" : "@RJBS/@Basic/Manifest",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::TestRelease",
-                     "name" : "@RJBS/@Basic/TestRelease",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::ConfirmRelease",
-                     "name" : "@RJBS/@Basic/ConfirmRelease",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::UploadToCPAN",
-                     "name" : "@RJBS/@Basic/UploadToCPAN",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::AutoPrereqs",
-                     "name" : "@RJBS/AutoPrereqs",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Git::NextVersion",
-                     "name" : "@RJBS/Git::NextVersion",
-                     "version" : "1.120370"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::PkgVersion",
-                     "name" : "@RJBS/PkgVersion",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::MetaConfig",
-                     "name" : "@RJBS/MetaConfig",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::MetaJSON",
-                     "name" : "@RJBS/MetaJSON",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::NextRelease",
-                     "name" : "@RJBS/NextRelease",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::PodSyntaxTests",
-                     "name" : "@RJBS/PodSyntaxTests",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Repository",
-                     "name" : "@RJBS/Repository",
-                     "version" : "0.18"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Prereqs",
-                     "config" : {
-                        "Dist::Zilla::Plugin::Prereqs" : {
-                           "phase" : "test",
-                           "type" : "requires"
-                        }
-                     },
-                     "name" : "@RJBS/TestMoreWithSubtests",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::PodWeaver",
-                     "name" : "@RJBS/PodWeaver",
-                     "version" : "3.101641"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::GithubMeta",
-                     "name" : "@RJBS/GithubMeta",
-                     "version" : "0.28"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Git::Check",
-                     "name" : "@RJBS/@Git/Check",
-                     "version" : "1.120370"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Git::Commit",
-                     "name" : "@RJBS/@Git/Commit",
-                     "version" : "1.120370"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Git::Tag",
-                     "name" : "@RJBS/@Git/Tag",
-                     "version" : "1.120370"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Git::Push",
-                     "name" : "@RJBS/@Git/Push",
-                     "version" : "1.120370"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::RemovePrereqs",
-                     "config" : {
-                        "Dist::Zilla::Plugin::RemovePrereqs" : {
-                           "modules_to_remove" : [
-                              "Test::More"
-                           ]
-                        }
-                     },
-                     "name" : "RemovePrereqs",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::Prereqs",
-                     "config" : {
-                        "Dist::Zilla::Plugin::Prereqs" : {
-                           "phase" : "test",
-                           "type" : "requires"
-                        }
-                     },
-                     "name" : "TestRequires",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::FinderCode",
-                     "name" : ":InstallModules",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::FinderCode",
-                     "name" : ":IncModules",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::FinderCode",
-                     "name" : ":TestFiles",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::FinderCode",
-                     "name" : ":ExecFiles",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::FinderCode",
-                     "name" : ":ShareFiles",
-                     "version" : "4.300007"
-                  },
-                  {
-                     "class" : "Dist::Zilla::Plugin::FinderCode",
-                     "name" : ":MainModule",
-                     "version" : "4.300007"
-                  }
-               ],
-               "zilla" : {
-                  "class" : "Dist::Zilla::Dist::Builder",
-                  "config" : {
-                     "is_trial" : "0"
-                  },
-                  "version" : "4.300007"
-               }
-            }
-         },
-         "name" : "Test::Fatal",
-         "pathname" : "R/RJ/RJBS/Test-Fatal-0.010.tar.gz",
-         "provides" : {
-            "Test::Fatal" : {
-               "file" : "Test/Fatal.pm",
-               "version" : "0.010"
-            }
-         },
-         "target" : "Test::Fatal",
-         "version" : "0.010"
-      },
-      "Test::NoWarnings" : {
-         "dist" : "Test-NoWarnings-1.04",
-         "mymeta" : {
-            "abstract" : "Make sure you didn't emit any warnings while testing",
-            "author" : [
-               "Fergal Daly <fergal@esatclear.ie>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "open_source"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Test-NoWarnings",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "inc"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "Test::More" : "0.47",
-                     "Test::Tester" : "0.107"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Test::Builder" : "0.86",
-                     "perl" : "5.006"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "repository" : {
-                  "url" : "http://svn.ali.as/cpan/trunk/Test-NoWarnings"
-               }
-            },
-            "version" : "1.04"
-         },
-         "name" : "Test::NoWarnings",
-         "pathname" : "A/AD/ADAMK/Test-NoWarnings-1.04.tar.gz",
-         "provides" : {
-            "Test::NoWarnings" : {
-               "file" : "Test/NoWarnings.pm",
-               "version" : "1.04"
-            },
-            "Test::NoWarnings::Warning" : {
-               "file" : "Test/NoWarnings/Warning.pm",
-               "version" : "1.04"
-            }
-         },
-         "target" : "Test::NoWarnings",
-         "version" : "1.04"
-      },
-      "Test::Tester" : {
-         "dist" : "Test-Tester-0.109",
-         "mymeta" : {
-            "abstract" : "unknown",
-            "author" : [
-               "Fergal Daly <fergal@esatclear.ie>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "unknown"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Test-Tester",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "inc"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Test::Builder" : "0"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "version" : "0.109"
-         },
-         "name" : "Test::Tester",
-         "pathname" : "F/FD/FDALY/Test-Tester-0.109.tar.gz",
-         "provides" : {
-            "Test::Tester" : {
-               "file" : "Test/Tester.pm",
-               "version" : "0.109"
-            },
-            "Test::Tester::Capture" : {
-               "file" : "Test/Tester/Capture.pm"
-            },
-            "Test::Tester::CaptureRunner" : {
-               "file" : "Test/Tester/CaptureRunner.pm"
-            },
-            "Test::Tester::Delegate" : {
-               "file" : "Test/Tester/Delegate.pm"
-            }
-         },
-         "target" : "Test::Tester",
-         "version" : "0.109"
-      },
-      "Try::Tiny" : {
-         "dist" : "Try-Tiny-0.12",
-         "mymeta" : {
-            "abstract" : "unknown",
-            "author" : [
-               "unknown"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "unknown"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "Try-Tiny",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "inc"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Test::More" : "0"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "resources" : {
-               "homepage" : "https://github.com/doy/try-tiny.git",
-               "repository" : {
-                  "type" : "git",
-                  "url" : "git://github.com/doy/try-tiny.git"
-               }
-            },
-            "version" : "0.12"
-         },
-         "name" : "Try::Tiny",
-         "pathname" : "D/DO/DOY/Try-Tiny-0.12.tar.gz",
-         "provides" : {
-            "Try::Tiny" : {
-               "file" : "Try/Tiny.pm",
-               "version" : "0.12"
-            }
-         },
-         "target" : "Try::Tiny",
-         "version" : "0.12"
-      },
       "autodie" : {
          "dist" : "autodie-2.20",
          "mymeta" : {
@@ -2271,20 +1159,18 @@
             "name" : "autodie",
             "prereqs" : {
                "build" : {
-                  "requires" : {
-                     "File::Copy" : "0",
-                     "File::Spec" : "0",
-                     "File::Temp" : "0",
-                     "FindBin" : "0",
-                     "IO::Handle" : "0",
-                     "Socket" : "0",
-                     "Test::More" : "0",
-                     "open" : "0"
-                  }
+                  "requires" : {}
                },
                "configure" : {
                   "requires" : {
                      "ExtUtils::MakeMaker" : "6.30"
+                  }
+               },
+               "develop" : {
+                  "requires" : {
+                     "Pod::Coverage::TrustPod" : "0",
+                     "Test::Pod" : "1.41",
+                     "Test::Pod::Coverage" : "1.08"
                   }
                },
                "runtime" : {
@@ -2309,6 +1195,24 @@
                      "strict" : "0",
                      "warnings" : "0"
                   }
+               },
+               "test" : {
+                  "recommends" : {
+                     "BSD::Resource" : "0",
+                     "Test::Kwalitee" : "0",
+                     "Test::Perl::Critic" : "0",
+                     "perl" : "5.010"
+                  },
+                  "requires" : {
+                     "File::Copy" : "0",
+                     "File::Spec" : "0",
+                     "File::Temp" : "0",
+                     "FindBin" : "0",
+                     "IO::Handle" : "0",
+                     "Socket" : "0",
+                     "Test::More" : "0",
+                     "open" : "0"
+                  }
                }
             },
             "release_status" : "stable",
@@ -2318,7 +1222,8 @@
                },
                "repository" : {
                   "type" : "git",
-                  "url" : "git://github.com/pjf/autodie"
+                  "url" : "git://github.com/pjf/autodie",
+                  "web" : "https://github.com/pjf/autodie"
                }
             },
             "version" : "2.20"
