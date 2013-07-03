@@ -32,7 +32,7 @@ helper ls => sub{
     my $path = $self->path(shift);
     if ( -d $path->realpath ) {
         opendir my $dir, $path->realpath  or Mojo::Exception->throw("Can't opendir " . $path->realpath);
-        return [map{ $self->stat($path->cat($_)) } readdir $dir];
+        return [map{ $self->stat($path->cat(decode_utf8($_))) } readdir $dir];
     } else {
         return [$self->stat($path)];
     }
