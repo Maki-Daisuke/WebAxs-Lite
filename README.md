@@ -65,6 +65,24 @@ If you want to use WebAccess UI, copy the related HTML/JS/CSS files into `public
 
 These UI files are not distributed with this software because of copyright and license.
 
+## Limitations
+
+* WebAxs-Lite does not support login users
+	* `login` command always returns "403 Permission denied"
+* WebAxs-Lite does not implement the following commands
+	* `upload` / `upload_via_flash`
+	* `mkdir`
+	* `rm`
+	* `mv`
+	* `cp`
+	* `dir_config`
+	* `purge`
+	* `share`
+* `thumbnail` command does not generate any thumbnails
+	* This command returns just dummy image saying "Thumbnail Not Suppoted"
+	* Non-blocking mode is not supported
+	* If `size` parameter is specified "3L" or "4L", it returns the original image as-is
+
 ## Term of Use
 
 This software is distributed under [the revised BSD License](http://opensource.org/licenses/bsd-license.php).
