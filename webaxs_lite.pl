@@ -49,6 +49,11 @@ helper stat => sub{
     };
 };
 
+helper extra_path => sub{
+    my $self = shift;
+    $self->path(decode_utf8($self->stash('path')));
+};
+
 helper path => sub{
     my ($self, $path) = @_;
     WebAxs::Path->new(SHARED_DIR, $path);
@@ -87,15 +92,13 @@ any [qw(get post)] => '/rpc/search(*path)' => {path => '/'} => sub{
 
 any [qw(get post)] => '/rpc/cat(*path)' => {path => '/'} => sub{
     my $self = shift;
-    my $path = decode_utf8($self->stash('path'));
-    $path = $self->path($path);
+    my $path = $self->extra_path;
     $self->_send_file($path, format => $path->extension, content_disposition => 'inline');
 };
 
 any [qw(get post)] => '/rpc/download(*path)' => {path => '/'} => sub{
     my $self = shift;
-    my $path = decode_utf8($self->stash('path'));
-    $path = $self->path($path);
+    my $path = $self->extra_path;
     $self->_send_file($path, content_disposition => 'attachment');
 };
 
@@ -122,8 +125,7 @@ any [qw(get post)] => '/rpc/download.zip(*path)' => {path => '/'} => sub{
 
 any [qw(get post)] => '/rpc/thumbnail(*path)' => {path => '/'} => sub{
     my $self = shift;
-    my $path = decode_utf8($self->stash('path'));
-    $path = $self->path($path);
+    my $path = $self->extra_path;
     return $self->render(status => 404, text => 'Unsupported file type')  unless $path =~ /\.(?:jpg|jpeg|gif|png)$/i;
     my $size = uc($self->param('size') || 'M');
     $size = 'M'  unless $size =~ /^(?:S|M|L|LL|3L|4L)$/;
