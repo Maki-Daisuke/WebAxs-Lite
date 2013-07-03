@@ -70,6 +70,8 @@ These UI files are not distributed with this software because of copyright and l
 * WebAxs-Lite does not support login users
 	* `login` command always returns "403 Permission denied"
 * WebAxs-Lite does not implement the following commands
+    * `search`
+    * `download.zip`
 	* `upload` / `upload_via_flash`
 	* `mkdir`
 	* `rm`
