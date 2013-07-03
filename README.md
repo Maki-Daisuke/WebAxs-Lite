@@ -11,7 +11,7 @@ Install [Carton](http://search.cpan.org/~miyagawa/carton-v0.9.15/lib/Carton.pm) 
 
 	> cpanm Carton
 
-or, with `cpan`:
+or, with [cpan](http://search.cpan.org/~andk/CPAN/lib/App/Cpan.pm):
 
 	> cpan Carton
 
@@ -28,7 +28,7 @@ That's it!
 
 ## How to Use ##
 
-WebAxs-Lite is implemented with Mojolicisou::Lite, and so, the easiest way to lanuch the server is using `morbo`:
+WebAxs-Lite is implemented with [Mojolicious::Lite](http://mojolicio.us/perldoc/Mojolicious/Lite), and so, the easiest way to lanuch the server is using `morbo` command:
 
 	> carton exec -Ilib -- morbo webaxs_lite.pl
 	[Wed Jul  3 18:26:05 2013] [info] Listening at "http://*:3000".
