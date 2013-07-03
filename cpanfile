@@ -1,4 +1,3 @@
-requires 'Carp';
 requires 'Encode'                         , '>= 2.51';
 requires 'File::Basename';
 requires 'File::stat';
