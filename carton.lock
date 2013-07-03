@@ -2252,60 +2252,6 @@
          "target" : "Try::Tiny",
          "version" : "0.12"
       },
-      "URI::Escape::XS" : {
-         "dist" : "URI-Escape-XS-0.10",
-         "mymeta" : {
-            "abstract" : "Drop-In replacement for URI::Escape",
-            "author" : [
-               "Dan Kogai <dankogai+cpan@gmail.com>"
-            ],
-            "dynamic_config" : 0,
-            "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.120921",
-            "license" : [
-               "perl_5"
-            ],
-            "meta-spec" : {
-               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-               "version" : "2"
-            },
-            "name" : "URI-Escape-XS",
-            "no_index" : {
-               "directory" : [
-                  "t",
-                  "inc"
-               ]
-            },
-            "prereqs" : {
-               "build" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "configure" : {
-                  "requires" : {
-                     "ExtUtils::MakeMaker" : "0"
-                  }
-               },
-               "runtime" : {
-                  "requires" : {
-                     "Test::More" : "0"
-                  }
-               }
-            },
-            "release_status" : "stable",
-            "version" : "0.10"
-         },
-         "name" : "URI::Escape::XS",
-         "pathname" : "D/DA/DANKOGAI/URI-Escape-XS-0.10.tar.gz",
-         "provides" : {
-            "URI::Escape::XS" : {
-               "file" : "URI/Escape/XS.pm",
-               "version" : "0.10"
-            }
-         },
-         "target" : "URI::Escape::XS",
-         "version" : "0.10"
-      },
       "autodie" : {
          "dist" : "autodie-2.20",
          "mymeta" : {

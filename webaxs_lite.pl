@@ -5,7 +5,6 @@ use Mojolicious::Lite;
 use Encode qw(decode_utf8);
 use File::stat;
 use Path::Tiny;
-use URI::Escape::XS qw(uri_unescape);
 use WebAxs::Path;
 use WebAxs::MimeTypes;
 
@@ -16,11 +15,6 @@ use constant false => Mojo::JSON->false;
 use constant WEBAXS_VERSION => '3.0';
 BEGIN{ Mojo::Exception->throw("Not a directory: $ENV{WEBAXS_SHARE}") if $ENV{WEBAXS_SHARE} && not -d $ENV{WEBAXS_SHARE} }
 use constant SHARED_DIR     => path($ENV{WEBAXS_SHARE} || app->home->rel_dir('./share'))->absolute;
-
-
-sub _decode_uri ($) {
-    decode_utf8(uri_unescape($_[0]));
-}
 
 
 plugin 'RenderFile';
@@ -83,7 +77,7 @@ get '/rpc/user_config' => sub{
 
 any [qw(get post)] => '/rpc/ls(*path)' => {path => '/'} => sub{
     my $self = shift;
-    my $path = _decode_uri($self->stash('path'));
+    my $path = decode_utf8($self->stash('path'));
     $self->render(json => $self->ls($path));
 };
 
@@ -93,14 +87,14 @@ any [qw(get post)] => '/rpc/search(*path)' => {path => '/'} => sub{
 
 any [qw(get post)] => '/rpc/cat(*path)' => {path => '/'} => sub{
     my $self = shift;
-    my $path = _decode_uri($self->stash('path'));
+    my $path = decode_utf8($self->stash('path'));
     $path = $self->path($path);
     $self->_send_file($path, format => $path->extension, content_disposition => 'inline');
 };
 
 any [qw(get post)] => '/rpc/download(*path)' => {path => '/'} => sub{
     my $self = shift;
-    my $path = _decode_uri($self->stash('path'));
+    my $path = decode_utf8($self->stash('path'));
     $path = $self->path($path);
     $self->_send_file($path, content_disposition => 'attachment');
 };
@@ -128,7 +122,7 @@ any [qw(get post)] => '/rpc/download.zip(*path)' => {path => '/'} => sub{
 
 any [qw(get post)] => '/rpc/thumbnail(*path)' => {path => '/'} => sub{
     my $self = shift;
-    my $path = _decode_uri($self->stash('path'));
+    my $path = decode_utf8($self->stash('path'));
     $path = $self->path($path);
     return $self->render(status => 404, text => 'Unsupported file type')  unless $path =~ /\.(?:jpg|jpeg|gif|png)$/i;
     my $size = uc($self->param('size') || 'M');
