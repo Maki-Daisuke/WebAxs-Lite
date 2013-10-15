@@ -45,7 +45,7 @@ Now you can call WebAxs-RPC via HTTP:
 
 You can specifies directory to publish by WEBAXS_SHARE environment variable:
 
-	> WEBAXS_SHARE=/home/your_account carton exec -Ilib -- morbo webaxs_lite.pl
+	> WEBAXS_SHARE=/home/your_account carton exec -- perl -Ilib local/bin/morbo webaxs_lite.pl
 
 The specified directory will be the root directory in WebAccess filesystem tree. By default, the server publishes `share`
 directory in the distribution.
