@@ -30,7 +30,7 @@ That's it!
 
 WebAxs-Lite is implemented with [Mojolicious::Lite](http://mojolicio.us/perldoc/Mojolicious/Lite), and so, the easiest way to lanuch the server is using `morbo` command:
 
-	> carton exec -Ilib -- morbo webaxs_lite.pl
+	> carton exec -- perl -Ilib local/bin/morbo webaxs_lite.pl
 	[Wed Jul  3 18:26:05 2013] [info] Listening at "http://*:3000".
 	Server available at http://127.0.0.1:3000.
 
